@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Hoodies</title>
-    <link rel="icon" type="image/svg+xml" href="assets/image/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Poppins:wght@400;600&display=swap"
         rel="stylesheet">
@@ -20,18 +20,22 @@
 
     <!-- Main content section -->
     <main>
+        <!-- Start: Hero Section -->
         <!-- Main Container -->
-        <div class="relative min-h-screen w-full flex flex-col lg:flex-row">
+        <section class="relative w-full flex flex-col lg:flex-row bg-white px-4">
+
+            <img class="hidden lg:block absolute left-0 top-0 -z-10 pointer-events-none select-none" src="assets/images/hero-section/left-shadow.png"
+                alt="Decorative shadow gradient overlay on left side of hero section creating depth and visual emphasis">
 
             <!-- Left Section (Content) -->
             <div
-                class="relative w-full lg:w-[55%] bg-brand-gray flex flex-col justify-center px-6 sm:px-12 lg:px-24 py-20 lg:py-0 overflow-hidden">
+                class="relative w-full lg:w-[60%] flex flex-col lg:pl-[13%] justify-center px-4 sm:px-8 lg:px-24 py-14 lg:py-0 overflow-hidden">
 
                 <!-- Background Watermark Text (HOODIES) -->
                 <!-- Positioned absolutely behind content but within the gray section -->
                 <div
-                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-[35%] pointer-events-none select-none z-0 hidden lg:block">
-                    <span class="font-oswald text-[180px] font-bold text-gray-300/50 tracking-widest uppercase"
+                    class="absolute right-46 top-1/2 -translate-y-1/2 translate-x-[35%] pointer-events-none select-none z-0 hidden lg:block">
+                    <span class="font-oswald text-[160px] font-bold text-gray-300/50 tracking-widest uppercase"
                         style="writing-mode: vertical-lr; text-orientation: mixed;">
                         Hoodies
                     </span>
@@ -39,12 +43,8 @@
 
                 <!-- Logo Area -->
                 <div class="absolute top-8 left-6 lg:left-24 lg:top-10 z-20">
-                    <div class="flex items-center gap-1">
-                        <!-- Stylized PJ Icon representation -->
-                        <div class="flex font-oswald font-bold text-4xl text-brand-yellow tracking-tighter">
-                            <span>PJ</span>
-                        </div>
-                        <span class="font-oswald font-bold text-3xl text-brand-yellow pl-1">Fashion</span>
+                    <div class="logo">
+                        <img src="assets/images/logo/logo.png" alt="Logo image" class="w-[230px] h-auto" />
                     </div>
                 </div>
 
@@ -52,19 +52,19 @@
                 <div class="relative z-10 max-w-xl">
                     <div class="self-stretch inline-flex flex-col justify-start items-start gap-6">
                         <div class="self-stretch justify-start"><span
-                                class="text-yellow-400 text-6xl font-bold font-['Hind_Siliguri'] leading-[74px]">এই
-                                শীতের</span><span
-                                class="text-black text-6xl font-bold font-['Hind_Siliguri'] leading-[74px]"> স্টাইল গেমে
-                                আনুন নতুনত্ব </span></div>
+                            class="text-yellow-400 text-3xl sm:text-5xl lg:text-6xl font-bold font-['Hind_Siliguri'] leading-snug lg:leading-[74px]">এই
+                            শীতের</span><span
+                            class="text-black text-3xl sm:text-5xl lg:text-6xl font-bold font-['Hind_Siliguri'] leading-snug lg:leading-[74px]"> স্টাইল গেমে
+                            আনুন নতুনত্ব </span></div>
                         <div
-                            class="self-stretch justify-start text-neutral-500 text-lg font-medium font-['Hind_Siliguri'] leading-6">
+                            class="self-stretch justify-start text-[#6B6B6B] text-base sm:text-lg font-medium font-['Hind_Siliguri'] leading-relaxed">
                             শীত এলেই শুরু হয় স্টাইলের নতুন অধ্যায়। এত কম দামে প্রিমিয়াম কোয়ালিটি Sweatshirt and
                             Pant। এই শীতের স্টাইল গেমে আনুন নতুনত্ব। বাজেট ফ্রেন্ডলি প্রাইসে পাচ্ছেন আমাদের এক্সক্লুসিভ
                             প্রিমিয়াম Sweatshirt Collection - যা আপনার লুককে করবে আরো স্টাইলিশ ও আকর্ষনীয়। </div>
                     </div>
 
                     <!-- Button -->
-                    <div class="px-8 mt-8 py-4 bg-yellow-500 inline-flex justify-center items-center gap-2">
+                    <div class="px-6 sm:px-8 mt-8 py-4 bg-yellow-500 inline-flex justify-center items-center gap-2 w-full sm:w-auto">
                         <div class="w-6 h-6 relative overflow-hidden">
                             <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -82,9 +82,9 @@
             </div>
 
             <!-- Right Section (Background Image) -->
-            <div class="w-full lg:w-[45%] h-[500px] lg:h-screen relative bg-black">
+            <div class="w-full lg:w-[40%] h-[380px] sm:h-[500px] lg:h-full relative bg-black order-first lg:order-none">
                 <!-- Main Background Image: Group of models -->
-                <img src="/public/assets/hero-section/hero-main.png" alt="Winter Collection Models"
+                <img src="assets/images/hero-section/hero-main.png" alt="Winter Collection Models"
                     class="w-full h-full object-cover opacity-90" />
                 <!-- Dark overlay for better contrast if needed -->
                 <div class="absolute inset-0 bg-black/10"></div>
@@ -93,30 +93,36 @@
             <!-- Floating Polaroid Image (Absolute Centered) -->
             <!-- This sits on top of both sections -->
             <div
-                class="absolute top-[65%] lg:top-1/2 left-1/2 lg:left-[55%] transform -translate-x-1/2 -translate-y-1/2 rotate-[-5deg] z-30 w-[280px] sm:w-[320px] lg:w-[380px] shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-transform hover:rotate-0 duration-500 ease-out">
+                class="hidden md:block absolute top-[65%] lg:top-1/2 left-1/2 lg:left-[60%] transform -translate-x-1/2 -translate-y-1/2 rotate-[-5deg] z-30 w-[280px] sm:w-[320px] lg:w-[380px] shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-transform hover:rotate-0 duration-500 ease-out">
                 <!-- Polaroid White Border -->
                 <div class="bg-white p-4 pb-16 lg:p-5 lg:pb-20">
                     <!-- Inner Image -->
                     <div class="w-full h-[350px] lg:h-[450px] overflow-hidden bg-gray-100 relative">
-                        <img src="/public/assets/hero-section/hero-overlay.png" alt="Featured Hoodie"
+                        <img src="assets/images/hero-section/hero-overlay.png" alt="Featured Hoodie"
                             class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                     </div>
                 </div>
             </div>
 
-        </div>
+        </section>
+        <!-- End: Hero Section -->
 
 
-        <!-- Benefits Section -->
-        <section class="py-24 bg-[#DFE2E6]"> <!-- Matching the background color from image -->
-            <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+        <!-- Start: Benefits Section -->
+        <section class="py-16 sm:py-20 lg:py-24"> <!-- Matching the background color from image -->
+            <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
 
                 <!-- Section Header -->
-                <div class="text-center max-w-4xl mb-16">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
+                <div class="text-center mb-16">
+                    <h2 class="text-stone-950
+text-5xl
+font-semibold
+font-['Hind_Siliguri']
+leading-[74px]">
                         কেন আমাদের হুডিগুলো অন্যদের থেকে আলাদা
                     </h2>
-                    <p class="text-gray-500 text-lg sm:text-xl font-medium leading-relaxed">
+                    <p
+                        class="max-w-[800px] mx-auto text-center text-[#6B6B6B] text-lg sm:text-xl font-medium leading-relaxed">
                         শীত এলেই শুরু হয় স্টাইলের নতুন অধ্যায়। এই মৌসুমে শুধু উষ্ণ থাকাই নয়, ফ্যাশনেও রাখতে হবে আলাদা
                         পরিচয়। আমাদের হুডি কালেকশন ঠিক সেই অভিজ্ঞতাই দেয়—উষ্ণতা, আরাম আর আধুনিক স্টাইলের একটি নিখুঁত
                         মিশ্রণ।
@@ -349,25 +355,25 @@
                 <div class="flex flex-col lg:flex-row justify-center items-center gap-6 w-full mb-16">
 
                     <!-- Gallery Image 1 -->
-                    <div class="bg-white p-4 w-full sm:w-[380px] shadow-sm">
-                        <div class="w-full h-[450px] bg-gray-100 overflow-hidden">
-                            <img src="/public/assets/why-different/IMG_5363.png" alt="Streetwear Style 1"
+                    <div class="bg-[#F4F5F9] p-4 w-full sm:w-[380px] shadow-sm">
+                        <div class="w-full h-[300px] sm:h-[380px] lg:h-[450px] bg-gray-100 overflow-hidden">
+                            <img src="assets/images/why-different/IMG_5363.png" alt="Streetwear Style 1"
                                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                         </div>
                     </div>
 
                     <!-- Gallery Image 2 -->
-                    <div class="bg-white p-4 w-full sm:w-[380px] shadow-sm">
-                        <div class="w-full h-[450px] bg-gray-100 overflow-hidden">
-                            <img src="/public/assets/why-different/IMG_5364.png" alt="Streetwear Style 2"
+                    <div class="bg-[#F4F5F9] p-4 w-full sm:w-[380px] shadow-sm">
+                        <div class="w-full h-[300px] sm:h-[380px] lg:h-[450px] bg-gray-100 overflow-hidden">
+                            <img src="assets/images/why-different/IMG_5364.png" alt="Streetwear Style 2"
                                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                         </div>
                     </div>
 
                     <!-- Gallery Image 3 -->
-                    <div class="bg-white p-4 w-full sm:w-[380px] shadow-sm">
-                        <div class="w-full h-[450px] bg-gray-100 overflow-hidden">
-                            <img src="/public/assets/why-different/IMG_5365.png" alt="Streetwear Style 3"
+                    <div class="bg-[#F4F5F9] p-4 w-full sm:w-[380px] shadow-sm">
+                        <div class="w-full h-[300px] sm:h-[380px] lg:h-[450px] bg-gray-100 overflow-hidden">
+                            <img src="assets/images/why-different/IMG_5365.png" alt="Streetwear Style 3"
                                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                         </div>
                     </div>
@@ -375,26 +381,497 @@
                 </div>
 
                 <!-- Footer CTA Button -->
-                <button
-                    class="group bg-brand-yellow hover:bg-yellow-500 transition-all duration-300 text-black font-bold text-xl py-3 px-10 inline-flex items-center gap-3 shadow-sm">
-                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M6 5H12C12 3.34315 10.6569 2 9 2C7.3431 2 6 3.34315 6 5ZM4 5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5H17C17.5523 5 18 5.44772 18 6V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V6C0 5.44772 0.44772 5 1 5H4ZM2 7V19H16V7H2ZM6 9C6 10.6569 7.3431 12 9 12C10.6569 12 12 10.6569 12 9H14C14 11.7614 11.7614 14 9 14C6.23858 14 4 11.7614 4 9H6Z"
-                            fill="#161616" />
-                    </svg>
+                <div class="px-6 sm:px-8 mt-4 py-4 bg-yellow-500 inline-flex justify-center items-center gap-2 w-full sm:w-auto">
+                    <div class="w-6 h-6 relative overflow-hidden">
+                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 5H12C12 3.34315 10.6569 2 9 2C7.3431 2 6 3.34315 6 5ZM4 5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5H17C17.5523 5 18 5.44772 18 6V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V6C0 5.44772 0.44772 5 1 5H4ZM2 7V19H16V7H2ZM6 9C6 10.6569 7.3431 12 9 12C10.6569 12 12 10.6569 12 9H14C14 11.7614 11.7614 14 9 14C6.23858 14 4 11.7614 4 9H6Z"
+                                fill="#161616"></path>
+                        </svg>
 
-
-                    <span>অর্ডার করুন</span>
-                </button>
+                    </div>
+                    <div
+                        class="text-center justify-start text-neutral-900 text-xl font-semibold font-['Hind_Siliguri'] leading-6">
+                        অর্ডার করুন </div>
+                </div>
 
             </div>
         </section>
-    </main>
+        <!-- End: Benefits Section -->
 
-    <!-- Footer section -->
-    <footer>
 
-    </footer>
+        <!-- Start: Customer Reviews Section -->
+        <div class="w-full bg-[#F4F5F9] py-16 sm:py-20 lg:py-24 px-4 md:px-10 lg:px-20 flex flex-col justify-start items-center gap-12">
+
+            <div class="max-w-[786px] flex flex-col justify-start items-center gap-4 text-center">
+                <div class="text-black text-3xl md:text-5xl font-semibold leading-tight">আমাদের কাষ্টমার রিভিউ</div>
+                <div class="text-neutral-500 text-base md:text-lg font-medium leading-relaxed px-4">
+                    আমাদের গ্রাহকরা সবসময়ই আমাদের অভিজ্ঞতা নিয়ে সন্তুষ্ট! প্রথম যোগাযোগ থেকে শুরু করে চূড়ান্ত
+                    ডেলিভারি পর্যন্ত আমরা সর্বোচ্চ মানের সেবা ও পণ্য দেওয়ার চেষ্টা করি, যা প্রত্যাশার থেকেও বেশি আনন্দ
+                    দেয়।
+                </div>
+            </div>
+
+            <div class="w-full max-w-[1440px] relative group">
+
+                <button
+                    class="hidden lg:flex absolute -left-16 top-1/2 -translate-y-1/2 w-10 h-10 bg-white items-center justify-center shadow-[0px_0px_20px_0px_rgba(0,0,0,0.15)] hover:bg-gray-50 cursor-pointer z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 justify-items-center">
+                    <img class="w-full max-w-[330px] h-auto md:h-[440px] object-cover shadow-[0px_0px_20px_0px_rgba(0,0,0,0.10)]"
+                        src="assets/images/testimonial/image 5.jpg" alt="Review 1" />
+
+                    <img class="w-full max-w-[330px] h-auto md:h-[440px] object-cover shadow-[0px_0px_20px_0px_rgba(0,0,0,0.10)]"
+                        src="assets/images/testimonial/Rectangle 4458.jpg" alt="Review 2" />
+
+                    <img class="w-full max-w-[330px] h-auto md:h-[440px] object-cover shadow-[0px_0px_20px_0px_rgba(0,0,0,0.10)]"
+                        src="assets/images/testimonial/Rectangle 4458.jpg" alt="Review 3" />
+
+                    <img class="w-full max-w-[330px] h-auto md:h-[440px] object-cover shadow-[0px_0px_20px_0px_rgba(0,0,0,0.10)]"
+                        src="assets/images/testimonial/Rectangle 4460.png" alt="Review 4" />
+                </div>
+
+                <button
+                    class="hidden lg:flex absolute -right-16 top-1/2 -translate-y-1/2 w-10 h-10 bg-white items-center justify-center shadow-[0px_0px_20px_0px_rgba(0,0,0,0.15)] hover:bg-gray-50 cursor-pointer z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex flex-col-reverse md:flex-row justify-center items-center gap-6 mt-4">
+
+                <div
+                    class="h-auto md:h-16 px-8 py-4 bg-[#E0EFEA] flex flex-col md:flex-row justify-center items-center gap-4 rounded-sm">
+                    <div
+                        class="text-right justify-start text-neutral-500 text-lg font-medium font-['Hind_Siliguri'] leading-6">
+                        যেকোন প্রয়োজনে</div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 relative">
+                            <div class="absolute"></div>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2242_1560)">
+                                    <g filter="url(#filter0_f_2242_1560)">
+                                        <path
+                                            d="M12.4495 31.5459L12.9598 31.8475C15.1027 33.1169 17.5598 33.7884 20.0655 33.7895H20.0708C27.7657 33.7895 34.0282 27.5404 34.0314 19.8597C34.0327 16.1378 32.5819 12.6377 29.9461 10.0049C28.6533 8.70644 27.1153 7.67683 25.4212 6.97564C23.727 6.27446 21.9103 5.91564 20.0762 5.91994C12.3753 5.91994 6.11268 12.1683 6.10994 19.8486C6.10615 22.4712 6.84609 25.0413 8.24422 27.2618L8.57638 27.7886L7.16578 32.9285L12.4495 31.5459ZM3.13281 36.9104L5.51593 28.226C4.0462 25.6846 3.27298 22.8013 3.2739 19.8474C3.27778 10.6066 10.8122 3.08887 20.071 3.08887C24.564 3.09115 28.7812 4.83627 31.9528 8.00411C35.1244 11.1719 36.8695 15.3827 36.8679 19.8609C36.8638 29.101 29.3281 36.6201 20.0708 36.6201H20.0635C17.2525 36.619 14.4905 35.9152 12.037 34.5799L3.13281 36.9104Z"
+                                            fill="#B3B3B3" />
+                                    </g>
+                                    <path
+                                        d="M2.95996 36.7385L5.34308 28.0542C3.87082 25.5065 3.09749 22.6166 3.10104 19.6756C3.10492 10.4348 10.6394 2.91699 19.8981 2.91699C24.3911 2.91927 28.6083 4.66439 31.7799 7.83223C34.9516 11.0001 36.6966 15.2108 36.695 19.689C36.6909 28.9291 29.1553 36.4483 19.8979 36.4483H19.8906C17.0797 36.4471 14.3176 35.7433 11.8642 34.4081L2.95996 36.7385Z"
+                                        fill="white" />
+                                    <path
+                                        d="M19.9028 5.74809C12.2019 5.74809 5.93928 11.9965 5.93654 19.6767C5.93275 22.2993 6.67269 24.8694 8.07082 27.0899L8.40298 27.6169L6.99238 32.7568L12.2764 31.374L12.7866 31.6757C14.9296 32.945 17.3866 33.6163 19.8923 33.6177H19.8976C27.5926 33.6177 33.8552 27.3686 33.8582 19.6879C33.864 17.8572 33.5059 16.0436 32.8047 14.352C32.1034 12.6604 31.073 11.1244 29.7729 9.83303C28.4801 8.53456 26.9421 7.50493 25.2479 6.80375C23.5537 6.10256 21.7369 5.74375 19.9028 5.74809Z"
+                                        fill="url(#paint0_linear_2242_1560)" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.7003 12.669C15.3857 11.9715 15.0547 11.9574 14.7559 11.9453L13.9514 11.9355C13.6715 11.9355 13.2168 12.0404 12.8323 12.4596C12.4479 12.8789 11.3633 13.8921 11.3633 15.953C11.3633 18.014 12.8673 20.0054 13.0768 20.2852C13.2864 20.565 15.9802 24.9291 20.2463 26.6081C23.7914 28.0035 24.5128 27.726 25.2826 27.6562C26.0524 27.5865 27.7657 26.643 28.1152 25.6648C28.4647 24.6866 28.4649 23.8486 28.3601 23.6734C28.2553 23.4982 27.9755 23.394 27.5554 23.1844C27.1354 22.9748 25.0723 21.9615 24.6876 21.8216C24.303 21.6817 24.0233 21.6122 23.7432 22.0315C23.4631 22.4507 22.6597 23.3938 22.4148 23.6734C22.1698 23.953 21.9253 23.988 21.5053 23.7786C21.0852 23.5693 19.7338 23.1268 18.1302 21.6997C16.8826 20.5894 16.0405 19.2182 15.7953 18.7992C15.5501 18.3801 15.7693 18.1532 15.9798 17.9445C16.1681 17.7567 16.3994 17.4553 16.6096 17.2108C16.8199 16.9663 16.889 16.7915 17.0287 16.5124C17.1685 16.2333 17.0988 15.9881 16.9938 15.7787C16.8888 15.5693 16.0734 13.4975 15.7003 12.669Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_f_2242_1560" x="-3.92919" y="-3.97313" width="47.8591"
+                                        height="47.9455" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix"
+                                            result="shape" />
+                                        <feGaussianBlur stdDeviation="3.531"
+                                            result="effect1_foregroundBlur_2242_1560" />
+                                    </filter>
+                                    <linearGradient id="paint0_linear_2242_1560" x1="19.6131" y1="7.42052" x2="19.7541"
+                                        y2="31.2368" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#57D163" />
+                                        <stop offset="1" stop-color="#23B33A" />
+                                    </linearGradient>
+                                    <clipPath id="clip0_2242_1560">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+
+
+                        </div>
+                        <div
+                            class="text-center justify-center text-neutral-700 text-3xl font-semibold font-['Jost'] leading-8">
+                            +8801905 000043</div>
+                    </div>
+                </div>
+
+                <div class="px-6 sm:px-8 py-4 bg-yellow-500 inline-flex justify-center items-center gap-2 w-full sm:w-auto">
+                    <div class="w-6 h-6 relative overflow-hidden">
+                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 5H12C12 3.34315 10.6569 2 9 2C7.3431 2 6 3.34315 6 5ZM4 5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5H17C17.5523 5 18 5.44772 18 6V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V6C0 5.44772 0.44772 5 1 5H4ZM2 7V19H16V7H2ZM6 9C6 10.6569 7.3431 12 9 12C10.6569 12 12 10.6569 12 9H14C14 11.7614 11.7614 14 9 14C6.23858 14 4 11.7614 4 9H6Z"
+                                fill="#161616"></path>
+                        </svg>
+
+                    </div>
+                    <div
+                        class="text-center justify-start text-neutral-900 text-xl font-semibold font-['Hind_Siliguri'] leading-6">
+                        অর্ডার করুন </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End: Customer Reviews Section -->
+
+
+        <!-- Start: Why Choose Us Section -->
+        <section class="w-full px-4 overflow-hidden py-16 sm:py-20 lg:py-24">
+            <div class="max-w-[1620px] mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+                <img class="max-w-[736px] h-auto" src="assets/images/why-choose-us/why-choose .png"
+                    alt="Product Image" />
+
+                <div class="w-full lg:w-7/12 flex flex-col gap-8 order-1 lg:order-2">
+
+                    <h2 class="text-3xl md:text-5xl font-semibold leading-tight text-black">
+                        কেন আমাদের প্রোডাক্ট বেছে নিবেন?
+                    </h2>
+
+                    <div class="flex flex-col gap-6">
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 flex-shrink-0 flex justify-center items-center">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.6678 29.9867C13.1735 29.9666 12.8195 29.7464 12.5456 29.366C11.6037 28.0848 10.6551 26.8101 9.70657 25.5289C7.22827 22.1789 4.74998 18.8288 2.27168 15.4788C2.10468 15.2519 1.95772 15.025 2.01116 14.7314C2.098 14.2376 2.63908 13.8105 3.26701 14.1642C5.08398 15.1919 6.92099 16.1862 8.74464 17.2005C9.86021 17.8212 10.9825 18.4351 12.098 19.0557C12.5723 19.316 12.6925 19.3026 13.06 18.9089C17.9765 13.6503 22.8863 8.39174 27.7961 3.13315C28.0366 2.87957 28.2771 2.61931 28.5176 2.36572C28.905 1.95197 29.2657 1.89191 29.6532 2.17219C30.0406 2.45247 30.1074 2.86622 29.8335 3.34003C28.9184 4.92828 27.9965 6.51653 27.0814 8.10479C23.0199 15.1318 18.9584 22.1522 14.897 29.1792C14.6097 29.673 14.229 29.98 13.6545 30L13.6678 29.9867Z"
+                                        fill="#F2B101" />
+                                </svg>
+
+                            </div>
+                            <div class="text-lg md:text-xl font-semibold text-neutral-600 leading-relaxed">
+                                <span class="font-['Roboto']">আমাদের পন্যগুলো ১</span>০০% কোয়ালিটিফুল ও কালার
+                                গ্যারান্টি
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 flex-shrink-0 flex justify-center items-center">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.6678 29.9867C13.1735 29.9666 12.8195 29.7464 12.5456 29.366C11.6037 28.0848 10.6551 26.8101 9.70657 25.5289C7.22827 22.1789 4.74998 18.8288 2.27168 15.4788C2.10468 15.2519 1.95772 15.025 2.01116 14.7314C2.098 14.2376 2.63908 13.8105 3.26701 14.1642C5.08398 15.1919 6.92099 16.1862 8.74464 17.2005C9.86021 17.8212 10.9825 18.4351 12.098 19.0557C12.5723 19.316 12.6925 19.3026 13.06 18.9089C17.9765 13.6503 22.8863 8.39174 27.7961 3.13315C28.0366 2.87957 28.2771 2.61931 28.5176 2.36572C28.905 1.95197 29.2657 1.89191 29.6532 2.17219C30.0406 2.45247 30.1074 2.86622 29.8335 3.34003C28.9184 4.92828 27.9965 6.51653 27.0814 8.10479C23.0199 15.1318 18.9584 22.1522 14.897 29.1792C14.6097 29.673 14.229 29.98 13.6545 30L13.6678 29.9867Z"
+                                        fill="#F2B101" />
+                                </svg>
+
+                            </div>
+                            <div class="text-lg md:text-xl font-semibold text-neutral-600 leading-relaxed">
+                                আমরা নিজস্ব তত্ত্বাবধানে ইসলামপুরে আমাদের নিজস্ব ফ্যাক্টরিতে মেনুফ্যাকচারিং করে থাকি।
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 flex-shrink-0 flex justify-center items-center">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.6678 29.9867C13.1735 29.9666 12.8195 29.7464 12.5456 29.366C11.6037 28.0848 10.6551 26.8101 9.70657 25.5289C7.22827 22.1789 4.74998 18.8288 2.27168 15.4788C2.10468 15.2519 1.95772 15.025 2.01116 14.7314C2.098 14.2376 2.63908 13.8105 3.26701 14.1642C5.08398 15.1919 6.92099 16.1862 8.74464 17.2005C9.86021 17.8212 10.9825 18.4351 12.098 19.0557C12.5723 19.316 12.6925 19.3026 13.06 18.9089C17.9765 13.6503 22.8863 8.39174 27.7961 3.13315C28.0366 2.87957 28.2771 2.61931 28.5176 2.36572C28.905 1.95197 29.2657 1.89191 29.6532 2.17219C30.0406 2.45247 30.1074 2.86622 29.8335 3.34003C28.9184 4.92828 27.9965 6.51653 27.0814 8.10479C23.0199 15.1318 18.9584 22.1522 14.897 29.1792C14.6097 29.673 14.229 29.98 13.6545 30L13.6678 29.9867Z"
+                                        fill="#F2B101" />
+                                </svg>
+
+                            </div>
+                            <div class="text-lg md:text-xl font-semibold text-neutral-600 leading-relaxed">
+                                কারন আমরা সম্পূর্ণ কাপড় নিজেরা প্রস্তুত করি কাপড়ের ওড়না ও পায়জামার কাপড় সম্পূর্ণ
+                                সুতি কাপড়।
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 flex-shrink-0 flex justify-center items-center">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.6678 29.9867C13.1735 29.9666 12.8195 29.7464 12.5456 29.366C11.6037 28.0848 10.6551 26.8101 9.70657 25.5289C7.22827 22.1789 4.74998 18.8288 2.27168 15.4788C2.10468 15.2519 1.95772 15.025 2.01116 14.7314C2.098 14.2376 2.63908 13.8105 3.26701 14.1642C5.08398 15.1919 6.92099 16.1862 8.74464 17.2005C9.86021 17.8212 10.9825 18.4351 12.098 19.0557C12.5723 19.316 12.6925 19.3026 13.06 18.9089C17.9765 13.6503 22.8863 8.39174 27.7961 3.13315C28.0366 2.87957 28.2771 2.61931 28.5176 2.36572C28.905 1.95197 29.2657 1.89191 29.6532 2.17219C30.0406 2.45247 30.1074 2.86622 29.8335 3.34003C28.9184 4.92828 27.9965 6.51653 27.0814 8.10479C23.0199 15.1318 18.9584 22.1522 14.897 29.1792C14.6097 29.673 14.229 29.98 13.6545 30L13.6678 29.9867Z"
+                                        fill="#F2B101" />
+                                </svg>
+
+                            </div>
+                            <div class="text-lg md:text-xl font-semibold text-neutral-600 leading-relaxed">
+                                আর আমাদের মোবাইল নাম্বারে সকাল দশটা হতে রাত দশটা পর্যন্ত পাওয়া যাবে।
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 flex-shrink-0 flex justify-center items-center">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.6678 29.9867C13.1735 29.9666 12.8195 29.7464 12.5456 29.366C11.6037 28.0848 10.6551 26.8101 9.70657 25.5289C7.22827 22.1789 4.74998 18.8288 2.27168 15.4788C2.10468 15.2519 1.95772 15.025 2.01116 14.7314C2.098 14.2376 2.63908 13.8105 3.26701 14.1642C5.08398 15.1919 6.92099 16.1862 8.74464 17.2005C9.86021 17.8212 10.9825 18.4351 12.098 19.0557C12.5723 19.316 12.6925 19.3026 13.06 18.9089C17.9765 13.6503 22.8863 8.39174 27.7961 3.13315C28.0366 2.87957 28.2771 2.61931 28.5176 2.36572C28.905 1.95197 29.2657 1.89191 29.6532 2.17219C30.0406 2.45247 30.1074 2.86622 29.8335 3.34003C28.9184 4.92828 27.9965 6.51653 27.0814 8.10479C23.0199 15.1318 18.9584 22.1522 14.897 29.1792C14.6097 29.673 14.229 29.98 13.6545 30L13.6678 29.9867Z"
+                                        fill="#F2B101" />
+                                </svg>
+
+                            </div>
+                            <div class="text-lg md:text-xl font-semibold text-neutral-600 leading-relaxed">
+                                যদি প্রোডাক্টের কোন সমস্যা থাকে উক্ত প্রোডাক্টের একটা ভিডিও করে আমাদেরকে আমাদের ফেসবুক
+                                মেসেঞ্জার অথবা হোয়াটসঅ্যাপে ভিডিও দিবেন। যদি আমরা সমস্যা যুক্তিযুক্ত মনে করি তাহলে আমরা
+                                বিনা ডেলিভারি চার্জে প্রোডাক্ট এক্সচেঞ্জ করে দিব।
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="px-6 sm:px-8 mt-4 py-4 bg-yellow-500 inline-flex justify-center items-center gap-2 w-full sm:w-auto">
+                            <div class="w-6 h-6 relative overflow-hidden">
+                                <svg width="18" height="21" viewBox="0 0 18 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6 5H12C12 3.34315 10.6569 2 9 2C7.3431 2 6 3.34315 6 5ZM4 5C4 2.23858 6.23858 0 9 0C11.7614 0 14 2.23858 14 5H17C17.5523 5 18 5.44772 18 6V20C18 20.5523 17.5523 21 17 21H1C0.44772 21 0 20.5523 0 20V6C0 5.44772 0.44772 5 1 5H4ZM2 7V19H16V7H2ZM6 9C6 10.6569 7.3431 12 9 12C10.6569 12 12 10.6569 12 9H14C14 11.7614 11.7614 14 9 14C6.23858 14 4 11.7614 4 9H6Z"
+                                        fill="#161616"></path>
+                                </svg>
+
+                            </div>
+                            <div
+                                class="text-center justify-start text-neutral-900 text-xl font-semibold font-['Hind_Siliguri'] leading-6">
+                                অর্ডার করুন </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End: Why Choose Us Section -->
+
+        <!-- Start: Product Detail Section -->
+        <section class="bg-slate-100 min-h-screen flex items-center justify-center py-16 sm:py-20 lg:py-24 px-4">
+            <div
+                class="bg-white w-full max-w-[980px] p-6 md:p-8 lg:p-10 shadow-sm flex flex-col md:flex-row items-start gap-8 md:gap-12">
+
+                <div class="w-full md:w-5/12 shrink-0">
+                    <div class="aspect-[3/4] w-full bg-gray-200 overflow-hidden">
+                        <img src="/public/assets/images/IMG_5365 (1).png" alt="Sweatshirt Set"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <div class="w-full md:w-7/12 flex flex-col gap-6 md:gap-8">
+
+                    <div class="space-y-4">
+                        <h1 class="text-slate-900 text-2xl md:text-3xl font-semibold leading-snug">
+                            প্রিমিয়াম কোয়ালিটির সোয়েট <br class="hidden md:block" />শার্ট সেট
+                        </h1>
+
+                        <div
+                            class="flex items-center justify-between border-b border-gray-100 pb-4 md:border-none md:pb-0">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="text-slate-400 text-2xl font-semibold line-through decoration-slate-400">৳১,৩০০</span>
+                                <span class="text-slate-900 text-2xl font-bold">৳১,১৫০</span>
+                            </div>
+                            <a href="#"
+                                class="text-slate-900 text-base font-semibold underline underline-offset-4 hover:text-yellow-600 transition-colors">
+                                সাইজ গাইড
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+
+                        <div class="space-y-3">
+                            <label class="text-slate-900 text-lg font-semibold block">সাইজ:</label>
+                            <div class="flex flex-wrap gap-3">
+                                <button
+                                    class="w-10 h-10 flex items-center justify-center border border-yellow-400 text-yellow-500 font-semibold text-sm transition-all">
+                                    M
+                                </button>
+                                <button
+                                    class="w-10 h-10 flex items-center justify-center border border-slate-300 text-slate-500 font-semibold text-sm hover:border-slate-800 hover:text-slate-800 transition-all">
+                                    L
+                                </button>
+                                <button
+                                    class="w-10 h-10 flex items-center justify-center border border-slate-300 text-slate-500 font-semibold text-sm hover:border-slate-800 hover:text-slate-800 transition-all">
+                                    XL
+                                </button>
+                                <button
+                                    class="w-12 h-10 flex items-center justify-center border border-slate-300 text-slate-500 font-semibold text-sm hover:border-slate-800 hover:text-slate-800 transition-all">
+                                    XXL
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <label class="text-slate-900 text-lg font-semibold block">কালার:</label>
+                            <div class="flex items-center gap-3">
+                                <button
+                                    class="w-9 h-9 p-0.5 border border-slate-600 rounded-none flex items-center justify-center">
+                                    <div class="w-full h-full bg-[#5D4037]"></div>
+                                </button>
+                                <button class="w-9 h-9 bg-black hover:scale-110 transition-transform"></button>
+                                <button class="w-9 h-9 bg-blue-600 hover:scale-110 transition-transform"></button>
+                                <button class="w-9 h-9 bg-orange-500 hover:scale-110 transition-transform"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+
+                        <div class="flex items-center border border-slate-200 w-fit">
+                            <button
+                                class="w-12 h-12 flex items-center justify-center text-slate-600 hover:bg-slate-50 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </button>
+                            <input type="number" value="2"
+                                class="w-10 h-12 text-center text-xl font-medium text-slate-900 border-x border-slate-200 focus:outline-none appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                                readonly>
+                            <button
+                                class="w-12 h-12 flex items-center justify-center text-slate-600 hover:bg-slate-50 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <button
+                            class="flex-1 bg-yellow-500 hover:bg-yellow-600 text-slate-900 text-xl font-semibold py-3 px-6 flex items-center justify-center gap-2 transition-colors duration-300 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+                            অর্ডার করুন
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End: Product Detail Section -->
+
+
+        <!-- Start: Size Chart Section -->
+        <div class="max-w-[1440px] mx-auto px-4 md:px-10 lg:px-20 py-16 sm:py-20 lg:py-24">
+
+            <div
+                class="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-gray-200 pb-4 mb-8 gap-4">
+                <h1 class="text-4xl md:text-5xl font-bold">সাইজ চার্ট</h1>
+
+                <div class="flex items-center gap-4">
+                    <span class="text-xl md:text-2xl font-semibold">সে. মি.</span>
+
+                    <button
+                        class="relative w-14 h-7 bg-white rounded-full border border-gray-300 shadow-sm flex items-center px-1 transition-colors">
+                        <div class="w-5 h-5 bg-yellow-400 rounded-full shadow-sm translate-x-0 transition-transform">
+                        </div>
+                    </button>
+
+                    <span class="text-xl md:text-2xl font-semibold">ইঞ্চি</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+                <div class="lg:col-span-7 w-full">
+
+                    <div class="overflow-x-auto border border-black mb-8">
+                        <table class="w-full border-collapse min-w-[600px] font-['Roboto']">
+                            <thead>
+                                <tr class="text-center font-medium text-lg md:text-xl">
+                                    <th class="border-r border-black p-3 w-32"></th>
+                                    <th class="border-r border-black p-3">S</th>
+                                    <th class="border-r border-black p-3">M</th>
+                                    <th class="border-r border-black p-3">L</th>
+                                    <th class="border-r border-black p-3">XL</th>
+                                    <th class="border-r border-black p-3">2XL</th>
+                                    <th class="border-r border-black p-3">3XL</th>
+                                    <th class="border-r border-black p-3">4XL</th>
+                                    <th class="p-3">5XL</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-lg md:text-xl text-center">
+                                <tr class="border-t border-black">
+                                    <td class="border-r border-black p-3 text-left font-sans font-normal px-4">Chest
+                                        Width</td>
+                                    <td class="border-r border-black p-3">20</td>
+                                    <td class="border-r border-black p-3">22</td>
+                                    <td class="border-r border-black p-3">24</td>
+                                    <td class="border-r border-black p-3">26</td>
+                                    <td class="border-r border-black p-3">28</td>
+                                    <td class="border-r border-black p-3">30</td>
+                                    <td class="border-r border-black p-3">32</td>
+                                    <td class="p-3">34</td>
+                                </tr>
+                                <tr class="border-t border-black">
+                                    <td class="border-r border-black p-3 text-left font-sans font-normal px-4">Sleeve
+                                        Length</td>
+                                    <td class="border-r border-black p-3 text-base">34 1/8</td>
+                                    <td class="border-r border-black p-3 text-base">35 1/8</td>
+                                    <td class="border-r border-black p-3 text-base">36 1/8</td>
+                                    <td class="border-r border-black p-3 text-base">37 1/8</td>
+                                    <td class="border-r border-black p-3 text-base">37 5/8</td>
+                                    <td class="border-r border-black p-3 text-base">38 1/8</td>
+                                    <td class="border-r border-black p-3 text-base">38 5/8</td>
+                                    <td class="p-3 text-base">40 1/2</td>
+                                </tr>
+                                <tr class="border-t border-black">
+                                    <td class="border-r border-black p-3 text-left font-sans font-normal px-4">Body
+                                        Length at Back</td>
+                                    <td class="border-r border-black p-3">28</td>
+                                    <td class="border-r border-black p-3">29</td>
+                                    <td class="border-r border-black p-3">30</td>
+                                    <td class="border-r border-black p-3">31</td>
+                                    <td class="border-r border-black p-3">32</td>
+                                    <td class="border-r border-black p-3">33</td>
+                                    <td class="border-r border-black p-3">34</td>
+                                    <td class="p-3">34</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="space-y-4 font-sans">
+                        <div>
+                            <h4 class="font-bold text-sm uppercase mb-0.5">CHEST WIDTH</h4>
+                            <p class="text-sm text-gray-600">Measured across the chest one inch below armhole when laid
+                                flat.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm uppercase mb-0.5">SLEEVE LENGTH</h4>
+                            <p class="text-sm text-gray-600">Start at center of neck and measure down shoulder, down
+                                sleeve to hem.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm uppercase mb-0.5">BODY LENGTH AT BACK</h4>
+                            <p class="text-sm text-gray-600">Measured from high point shoulder to finished hem at back.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lg:col-span-5 flex justify-center items-start">
+                    <img src="/public/assets/images/chirt-skach.png" alt="Hoodie Measurement Guide"
+                        class="w-full max-w-md object-contain grayscale opacity-80" />
+                </div>
+
+            </div>
+
+            <div class="mt-16 w-full bg-slate-100 py-8 px-6 md:px-12 text-center rounded-sm">
+                <p class="text-lg md:text-xl font-medium leading-relaxed text-slate-900">
+                    অবশ্যই ১০০% কনফার্ম হয়ে অর্ডারটি করবেন। সাইজে প্রবলেম হলে অথবা অন্য কোন সমস্যা হলে রিটার্ন বা
+                    এক্সচেঞ্জ করে নিতে পারবেন ৩ দিনের ভেতরে। প্রয়োজনে যোগাযোগ করুনঃ
+                </p>
+            </div>
+
+        </div>
+        <!-- End: Size Chart Section -->
+
+        <!-- Start: Footer Section -->
+        <footer>
+
+        </footer>
+        <!-- End: Footer Section -->
 </body>
 
 </html>
